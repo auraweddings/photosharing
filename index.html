@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Montserrat:wght@300;400;500;600&family=Great+Vibes&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Montserrat:wght@300;400;500;600&family=Dancing+Script:wght@700&display=swap"
         rel="stylesheet">
 
     <link rel="stylesheet" href="style.css">
@@ -19,101 +19,54 @@
 </head>
 
 <body>
-    <!-- Hero Section -->
-    <section id="hero" class="video-section">
-        <div class="video-overlay"></div>
-        <div class="video-grain"></div>
+    <!-- Floating floral background -->
+    <div class="hearts-bg">
+        <div class="heart">🌺</div>
+        <div class="heart">🌿</div>
+        <div class="heart">🌼</div>
+        <div class="heart">🌸</div>
+        <div class="heart">🌷</div>
+        <div class="heart">🌹</div>
+    </div>
 
-        <div class="hero-content content-relative fade-up">
-            <p class="sub-headline">We Invite You to the Wedding of</p>
-
-            <div class="couple-names">
-                <h1>Paul</h1>
-                <span class="amp">&</span>
-                <h1>Fakiha</h1>
-            </div>
-
+    <div class="container">
+        <!-- Hero Section -->
+        <div class="hero">
+            <h1>Paul & Fakiha</h1>
             <div class="divider"></div>
+            <p class="date">March 29th, 2026</p>
 
-            <p class="date">Sunday, March 29th, 2026</p>
-            <p class="time">@ 1:00 PM</p>
-
-            <button id="save-the-date" class="btn-primary">Save the Date</button>
-            <button id="upload_widget" class="btn-primary" style="margin-top: 1rem;">Share your photos</button>
-        </div>
-
-        <div class="scroll-hint content-relative">
-            <p>Ceremony Details</p>
-            <div class="scroll-arrow">
-                <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                    stroke-linecap="round" stroke-linejoin="round">
-                    <polyline points="7 13 12 18 17 13"></polyline>
-                    <polyline points="7 6 12 11 17 6"></polyline>
-                </svg>
-            </div>
-        </div>
-    </section>
-
-    <!-- Main Content (revealed on scroll or interaction) -->
-    <div id="main-content">
-        <!-- Ceremony Details Section -->
-        <section id="details">
-            <div class="container fade-up">
-                <h2>Ceremony Details</h2>
-                <div class="divider"></div>
-                <div class="detail-card">
-                    <h3>The Ceremony</h3>
-                    <p class="date">Sunday, March 29th, 2026</p>
-                    <p class="time">1:00 PM</p>
-                    <p class="location-name">Elegant Wedding Venue</p>
-                    <p class="location-address">123 Romance Lane, Bliss City</p>
-                    <a href="#" class="map-link">View on Google Maps</a>
+            <!--
+            // Countdown Timer //
+            <div class="countdown" id="countdown">
+                <div class="countdown-item">
+                    <span class="countdown-number" id="days">00</span>
+                    <span class="countdown-label">Days</span>
+                </div>
+                <div class="countdown-item">
+                    <span class="countdown-number" id="hours">00</span>
+                    <span class="countdown-label">Hours</span>
+                </div>
+                <div class="countdown-item">
+                    <span class="countdown-number" id="minutes">00</span>
+                    <span class="countdown-label">Minutes</span>
+                </div>
+                <div class="countdown-item">
+                    <span class="countdown-number" id="seconds">00</span>
+                    <span class="countdown-label">Seconds</span>
                 </div>
             </div>
-        </section>
-
-        <!-- Countdown Section -->
-        <section id="countdown">
-            <div class="container">
-                <h2 class="fade-up">Counting Down to Our Big Day</h2>
-                <div class="divider"></div>
-                <div class="countdown">
-                    <div class="countdown-item">
-                        <span class="countdown-number" id="days">00</span>
-                        <span class="countdown-label">Days</span>
-                    </div>
-                    <div class="countdown-item">
-                        <span class="countdown-number" id="hours">00</span>
-                        <span class="countdown-label">Hours</span>
-                    </div>
-                    <div class="countdown-item">
-                        <span class="countdown-number" id="minutes">00</span>
-                        <span class="countdown-label">Minutes</span>
-                    </div>
-                    <div class="countdown-item">
-                        <span class="countdown-number" id="seconds">00</span>
-                        <span class="countdown-label">Seconds</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Gallery Section (Re-adding the gallery) -->
-        <section id="gallery-section" class="container">
-            <h2 class="fade-up">Wedding Gallery</h2>
-            <div class="divider"></div>
-            <div id="gallery">
-                <!-- Photos will be loaded here -->
-            </div>
-        </section>
-
-        <!-- Footer -->
-        <footer class="footer">
-            <p>Made with <span class="heart-icon">❤️</span> for Paul & Fakiha</p>
-        </footer>
+        -->
+            <p class="message">
+                Join us in capturing the magic of our special day!
+                Share your favorite moments and help us create lasting memories together.
+            </p>
+            <button id="upload_widget" class="btn">Share your photos</button>
+        </div>
     </div>
 
     <script src="https://upload-widget.cloudinary.com/global/all.js" type="text/javascript"></script>
+
     <script src="script.js" defer></script>
 </body>
 
