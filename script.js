@@ -28,16 +28,16 @@ function initWidget() {
         styles: {
             palette: {
                 window: "#f5f1e8",
-                windowBorder: "#d4af37",
-                tabIcon: "#d4af37",
-                menuIcons: "#d4af37",
+                windowBorder: "#a37e2c",
+                tabIcon: "#a37e2c",
+                menuIcons: "#a37e2c",
                 textDark: "#9d7e3a",
                 textLight: "#666666",
-                link: "#d4af37",
-                action: "#d4af37",
+                link: "#a37e2c",
+                action: "#a37e2c",
                 inactiveTabIcon: "#c9a961",
                 error: "#f44235",
-                inProgress: "#d4af37",
+                inProgress: "#a37e2c",
                 complete: "#20b832",
                 sourceBg: "#ede6d9"
             },
