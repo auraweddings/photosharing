@@ -31,7 +31,7 @@ function initWidget() {
                 windowBorder: "#a37e2c",
                 tabIcon: "#a37e2c",
                 menuIcons: "#a37e2c",
-                textDark: "#9d7e3a",
+                textDark: "#ffffffff",
                 textLight: "#666666",
                 link: "#a37e2c",
                 action: "#a37e2c",
