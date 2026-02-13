@@ -14,7 +14,6 @@ function initWidget() {
     myWidget = cloudinary.createUploadWidget({
         cloudName: cloudName,
         uploadPreset: unsignedUploadPreset,
-        inlineContainer: "#widget-overlay",
         sources: ['local', 'camera'],
         resourceType: 'image',
         clientAllowedFormats: ['jpg', 'png', 'jpeg', 'webp'],
@@ -68,15 +67,6 @@ function initWidget() {
             console.log('Done! Photo Shared!');
         }
 
-        // Manage container visibility
-        const container = document.getElementById("widget-overlay");
-        if (result.event === "open") {
-            container.style.display = "block";
-            container.style.pointerEvents = "all";
-        } else if (result.event === "close") {
-            container.style.display = "none";
-            container.style.pointerEvents = "none";
-        }
     });
 }
 
